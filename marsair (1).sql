@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 29 mars 2022 à 11:47
+-- Généré le : mar. 29 mars 2022 à 13:11
 -- Version du serveur : 5.7.36
 -- Version de PHP : 8.0.13
 
@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
 DROP TABLE IF EXISTS `post`;
 CREATE TABLE IF NOT EXISTS `post` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sensor_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `description` text,
   `img_path` text,
