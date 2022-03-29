@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Inspiration&family=Nunito+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: black;
+}
+body {
+  background-image: url("../images/background.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 80%;
+  padding: 4%;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+.blackBack {
+  background: #00000090;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .navButton {
+  z-index: 10;
+  position: fixed;
+  top: 24px;
+  left: 2%;
+}
+.logo {
+  font-size: 26px;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+header .navButton ul li {
+  margin: 5px;
+  height: 4px;
+  width: 35px;
+  border-radius: 20px;
+  background: white;
+  transition: 0.6s all ease-in-out;
+}
+
+header .navigation ul li a {
+  color: white;
+}
+
+header .navigation ul li {
+  margin: 40px;
+}
+
+header .navigation {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 50px;
+  padding-top: 100px;
+  background-color: #00000095;
+  backdrop-filter: blur(6px);
+  transition: 0.6s all ease-in-out;
+}
+
+/* ----------------- */
+.homeSection {
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+}
+
+.homeSection .text {
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+/* ---------BULBE----------- */
+.bulb1 {
+  position: fixed;
+  top: 12%;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bulb1 div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(72, 207, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bulb1 div:nth-child(2) {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+}
+
+.bulb2 {
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bulb2 div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(207, 186, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bulb2 div:nth-child(2) {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+}
+/* -----------BULBE--------- */
+/* SIGIN */
+.signin {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  color: black;
+  transition: 0.6s all ease-in-out;
+}
+.signin label {
+  font-weight: 200;
+}
+.signin p:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+}
+.signin a {
+  font-size: 10px;
+  font-weight: 200;
+}
+.signin form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signin form div {
+  width: 100%;
+  margin: 5px;
+}
+.signin form div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+.signin input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.signin button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  padding: 8px;
+  width: 200px;
+  font-size: 18px;
+  border: none;
+}
+
+.exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  color: white;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
