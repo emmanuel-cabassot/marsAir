@@ -34,6 +34,7 @@
     </header>
     <section class="homeSection">
       <!-- TEXT PRESENTATION -->
+      <img src="./assets/images/mockup-map.png" class="mockup" alt="mockup-map">
       <div class="text">
         <img src="./assets/layouts/logo-mars'air.png" class="logo-marsair1" alt="logo mars'air">
         <p class="lorem">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
