@@ -21,6 +21,9 @@ body {
   width: 100%;
   color: white;
 }
+.mapboxgl-popup-content {
+  background-color: orange;
+}
 .blackBack {
   /* background: #00000090; */
   background: linear-gradient(#00000020, #000000);
