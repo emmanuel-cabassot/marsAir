@@ -13,7 +13,8 @@
 <body>
   <div class="blackBack">
     <header>
-      <p class="logo">MARS'AIR</p>
+      <!-- <p class="logo">MARS'AIR</p> -->
+      <img src="./assets/layouts/logo-mars'air.png" class="logo-marsair" alt="logo mars'air">
       <nav class="navButton" onclick="navBar()">
         <ul>
           <li></li>
@@ -33,12 +34,13 @@
     </header>
     <section class="homeSection">
       <!-- TEXT PRESENTATION -->
+      <img src="./assets/images/mockup-map.png" class="mockup" alt="mockup-map">
       <div class="text">
-        <p class="logo">MARS'AIR</p>
-        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
-          Le
-          Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
-          assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de </p>
+        <img src="./assets/layouts/logo-mars'air.png" class="logo-marsair1" alt="logo mars'air">
+        <p class="lorem">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+          Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme
+          assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de 
+        </p>
       </div>
     </section>
     <!-- BULBES -->
