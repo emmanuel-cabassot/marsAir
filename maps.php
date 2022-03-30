@@ -247,35 +247,38 @@ ${total.toLocaleString()}
       map.on("click", "earthquake_label", (e) => {
         
         // Copy coordinates array.
-        const alert1 = "<p>BONNE 0-12 : La qualité de l’air est satisfaisante et la pollution a peu ou pas d’incidence sur la santé.</p>"
-        const alert2 = "<p>MOYENNE 12 – 35 : La qualité de l’air est acceptable, les personnes sensibles peuvent ressentir des effets.</p>"
-        const alert3 = "<p>DEGRADEE 35 – 55 : La qualité de l’air est dégradée, les personnes sensibles peuvent ressentir des effets ainsi que les personnes âgées et les enfants.</p>"
-        const alert4 ="<p> MAUVAISE 55 – 150 : Toute personne peut ressentir des effets et les personnes sensibles sont à risque.</p>"
-        const alert5 = "<p> EXTREMEMENT MAUVAIS  > 150 : Toute la population est concernée et ressent des effets néfastes pour la santé.</p>"
+        const alert1 = "<p><span>BONNE 0-12</span> : La qualité de l’air est satisfaisante et la pollution a peu ou pas d’incidence sur la santé.</p>"
+        const alert2 = "<p><span>MOYENNE 12 – 35</span> : La qualité de l’air est acceptable, les personnes sensibles peuvent ressentir des effets.</p>"
+        const alert3 = "<p><span>DEGRADEE 35 – 55</span> : La qualité de l’air est dégradée, les personnes sensibles peuvent ressentir des effets ainsi que les personnes âgées et les enfants.</p>"
+        const alert4 ="<p><span>MAUVAISE 55 – 150</span> : Toute personne peut ressentir des effets et les personnes sensibles sont à risque.</p>"
+        const alert5 = "<p><span>EXTREMEMENT MAUVAIS  > 150</span> : Toute la population est concernée et ressent des effets néfastes pour la santé.</p>"
         const coordinates = e.features[0].geometry.coordinates.slice();
         let description = e.features[0].properties.localisation;
         const pollution = e.features[0].properties.mag;
-        console.log(pollution)
         let alerte = null
         if (pollution < 13) {
             alerte = alert1
+            description = '<div class="bg-popup-green">"<strong>' +description+alerte+ '</strong></div>'
         }
         if (pollution > 12  && pollution < 35) {
             alerte = alert2
+            total = '<div class="bg-popup-yellow"><strong>' +description+alerte+ '</strong></div>'
         }
         if (pollution > 34  && pollution < 55) {
             alerte = alert3
+            total = '<div class="bg-popup-orange"><strong>' +description+alerte+ '</strong></div>'
         }
         if (pollution > 54  && pollution < 150) {
             alerte = alert4
+            total = '<div class="bg-popup-red"><strong>' +description+alerte+ '</strong></div>'
         }
         if (pollution > 149  ) {
             alerte = alert5
+            total = '<div class="bg-popup-black"><strong>' +description+alerte+ '</strong></div>'
         }
-        description = '<strong>' +description+ '</strong>'
-        const total = description + alerte
+        /* description = '<strong>' +description+ '</strong>'
+        const total = description + alerte */
 
-        console.log(coordinates);
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
         // over the copy being pointed to.
