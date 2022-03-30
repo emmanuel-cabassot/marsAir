@@ -1,23 +1,23 @@
-<section class="signin">
+<section class="signin" id="signin">
   <p class="exit" onclick="showSignin()">X</p>
-  <p>Connexion</p>
+  <p class="title">Connexion</p>
   <p>Garde un oeil sur l’air que tu respire.</p>
   <br>
-  <form action="">
+  <div class="form">
     <div>
       <label for="email">E-mail</label><br>
-      <input type="text" name="email" id="email" placeholder="john.doe@example.come">
+      <input type="text" name="email" id="email" placeholder="john.doe@example.com">
     </div>
     <div>
-      <label for="password">E-mail</label><br>
-      <input type="text" name="password" id="password" placeholder="******">
+      <label for="password">Mot de passe</label><br>
+      <input type="password" name="password" id="password" placeholder="******">
     </div>
     <br>
     <button>se connecter</button>
     <br>
     <div>
-      <a href="">mot de passe oublié ?</a>
-      <a href="">pas encore inscrit ?</a>
+      <p>mot de passe oublié ?</p>
+      <p onclick="showSignin(),showSignup()">pas encore inscrit ?</p>
     </div>
-  </form>
+  </div>
 </section>

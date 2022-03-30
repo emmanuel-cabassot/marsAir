@@ -55,7 +55,7 @@
     <!-- CONNEXION -->
     <?php include "./assets/layouts/signin.html" ?>
     <!-- INSCRIPTION -->
-
+    <?php include "./assets/layouts/signup.html" ?>
   </div>
   <script src="./javascript/index.js"></script>
 </body>

@@ -8,7 +8,6 @@ function navBar() {
     $(".navButton ul li:nth-child(1)").css("margin-bottom", "-9px");
     $(".navButton ul li:nth-child(1)").css("transform", "rotate(45deg)");
 
-    // $(".navButton ul li:nth-child(3)").css("margin-bottom", "-10px");
     $(".navButton ul li:nth-child(3)").css("transform", "rotate(-45deg)");
   } else {
     $(".navigation").css("left", "-100%");
@@ -17,7 +16,6 @@ function navBar() {
     $(".navButton ul li:nth-child(1)").css("margin-bottom", "0");
     $(".navButton ul li:nth-child(1)").css("transform", "rotate(0deg)");
 
-    // $(".navButton ul li:nth-child(3)").css("margin-bottom", "0");
     $(".navButton ul li:nth-child(3)").css("transform", "rotate(0deg)");
   }
 }
@@ -29,22 +27,23 @@ function showSignin() {
   issignin = !issignin;
   setTimeout(() => {
     if (issignin) {
-      $(".signin").css("bottom", "0%");
+      $("#signin").css("bottom", "0%");
     }
   }, 600);
   if (!issignin) {
-    $(".signin").css("bottom", "-100%");
+    $("#signin").css("bottom", "-100%");
   }
 }
 
 function showSignup() {
   issignup = !issignup;
+  console.log(issignup);
   setTimeout(() => {
     if (issignup) {
-      $(".signin").css("bottom", "0%");
+      $("#signup").css("bottom", "0%");
     }
-  }, 600);
+  }, 400);
   if (!issignup) {
-    $(".signin").css("bottom", "-100%");
+    $("#signup").css("bottom", "-100%");
   }
 }

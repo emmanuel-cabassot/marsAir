@@ -1,23 +1,35 @@
-<section class="signup">
-  <p class="exit" onclick="showSignun()">X</p>
-  <p>Connexion</p>
+<section class="signin" id="signup">
+  <p class="exit" onclick="showSignup()">X</p>
+  <p class="title">Inscription</p>
   <p>Garde un oeil sur l’air que tu respire.</p>
   <br>
-  <form action="">
+  <div class="form">
+    <div>
+      <label for="firstName">Prénom</label><br>
+      <input type="text" name="firstName" id="firstName" placeholder="John">
+    </div>
+    <div>
+      <label for="lastName">Nom</label><br>
+      <input type="text" name="lastName" id="lastName" placeholder="DOE">
+    </div>
     <div>
       <label for="email">E-mail</label><br>
-      <input type="text" name="email" id="email" placeholder="john.doe@example.come">
+      <input type="text" name="email" id="email" placeholder="john.doe@example.com">
     </div>
     <div>
-      <label for="password">E-mail</label><br>
-      <input type="text" name="password" id="password" placeholder="******">
+      <label for="password">Mot de passe</label><br>
+      <input type="password" name="password" id="password" placeholder="******">
+    </div>
+    <div>
+      <label for="cpassword">Confirmer mot de passe</label><br>
+      <input type="password" name="password" id="password" placeholder="******">
     </div>
     <br>
-    <button>se connecter</button>
+    <button>s'inscrire</button>
     <br>
     <div>
       <a href="">mot de passe oublié ?</a>
-      <a href="">pas encore inscrit ?</a>
+      <a href="">j’ai un compte ?</a>
     </div>
-  </form>
+  </div>
 </section>
